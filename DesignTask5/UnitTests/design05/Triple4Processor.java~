@@ -1,0 +1,77 @@
+/**
+ * Created by IntelliJ IDEA.
+ * User: ates466
+ * Date: 3/27/12
+ * Time: 8:09 PM
+ * To change this template use File | Settings | File Templates.
+ */
+public class Triple4Processor implements Processor {
+    
+    ProcessorState myState;
+    boolean isInitialised;
+    int instructionPointer;
+    public Triple4Processor() {
+    
+       myState = new Triple4ProcessorState();
+       isInitialised = false;
+        instructionPointer = 0;
+
+
+    }    
+    @Override
+    public void doNextStep() throws BellRungException, HaltException {
+        if (isInitialised) {
+            int currentMemory[] = myState.getMemory();
+            int currentAction == currentMemory[instructPointer];
+
+            if (currentAction == 0) {
+                // do nothing, we are halted
+            } else if (currentAction == 1) {
+                myState.setRegister(0, myState.getRegister(1) - myState.getRegister(0));
+            } else if (currentAction == 2) {
+
+            } else if (currentAction == 3) {
+
+            } else if (currentAction == 4) {
+
+            } else if (currentAction == 5) {
+
+            } else if (currentAction == 6) {
+
+            } else if (currentAction == 7) {
+
+            } else if (currentAction == 8) {
+
+            } else if (currentAction == 9) {
+
+            } else if (currentAction == 0xA) {
+
+            } else if (currentAction == 0xB) {
+
+            } else if (currentAction == 0xC) {
+
+            } else if (currentAction == 0xD) {
+
+            } else if (currentAction == 0xE) {
+
+            } else if (currentAction == 0xF) {
+
+            }
+        }
+    }
+
+    @Override
+    public void setState(ProcessorState state) {
+        isInitialised = true;
+        myState = state;
+    }
+
+    @Override
+    public ProcessorState getState() {
+        if (isInitialised) {
+           return null;
+        } else {
+           return myState;
+        }
+    }
+}

@@ -1,0 +1,6 @@
+public interface ProcessorAction() {
+
+   public void doAction(ProcessorState myState);
+   public String getOutput();
+
+}

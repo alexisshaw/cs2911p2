@@ -1,0 +1,23 @@
+#! /bin/bash
+# requires java, javac. 
+# Compiles and runs the current version of Roma
+#	written by Damon Stacey and Karla Burnet
+
+reset
+echo Compiling
+
+cd design05
+javac *.java
+
+#cd ../d5AcceptanceTests
+#javac *.java
+
+cd ../UnitTests
+javac *.java
+
+cd ..
+
+echo running....
+
+java -ea UnitTests.Tester
+./clean

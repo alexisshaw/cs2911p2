@@ -1,0 +1,12 @@
+#! /bin/bash
+# requires java, javac. 
+# Compiles and runs the current version of Roma
+#	written by Damon Stacey and Karla Burnet
+
+reset
+echo cleaning
+
+rm */*.class -R
+rm */*.java~ -R
+
+reset

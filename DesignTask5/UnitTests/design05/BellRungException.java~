@@ -1,0 +1,11 @@
+/**
+ * Created by IntelliJ IDEA.
+ * User: ates466
+ * Date: 3/27/12
+ * Time: 7:28 PM
+ * To change this template use File | Settings | File Templates.
+ */
+public class BellRungException extends Exception {
+
+
+}

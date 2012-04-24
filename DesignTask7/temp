@@ -1,0 +1,87 @@
+HTTP/1.1 200 OK
+Date: Tue, 24 Apr 2012 09:11:01 GMT
+Server: Apache/1.3.41 (Unix) PHP/5.2.6
+X-Powered-By: PHP/5.2.6
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Content-Type: text/html
+Content-Length: 5687
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+ <title>COMP2121 - Menu</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta http-equiv='Pragma' content='no-cache'>
+<meta http-equiv='expires' content='0'>
+<script type='text/javascript' src='http://mahler.cse.unsw.edu.au/webcms2/js/jquery-1.3.2.min.js'></script>
+<script type='text/javascript' src='http://mahler.cse.unsw.edu.au/webcms2/js/new.jquery-ui.custom.min.js'></script>
+<link rel='stylesheet' type='text/css' href='http://mahler.cse.unsw.edu.au/webcms2/css/new.jquery-ui.custom.css'/>
+<link rel='stylesheet' type='text/css' href='http://mahler.cse.unsw.edu.au/webcms2/css/menu.css'>
+<style type='text/css'>
+body {color:#FFFFFF;background-color:#000066;}
+a {color:#FFFFFF;}
+input.menu {background:#000066; color:#FFFFFF; font-size:x-small; margin:0; padding:0; border-width:0; width:12px; height:15px}
+input.menu:hover {color:#000000;background:#FFFFCC;}
+</style>
+<script language='JavaScript'>
+
+function checkForm(form)
+{
+	if (form.username.value == "")
+	{
+		alert("Please enter username");
+		form.username.focus();
+		return false;
+	}
+	if (form.password.value=="")
+	{
+		alert("Pleaser enter password");
+		form.password.focus();
+		return false;
+	}
+	return true;
+}
+function expand(name) {
+	var show = document.getElementById(name).style.display;
+	var view = "none"
+	if(show == "none")
+		view = "block";
+	document.getElementById(name).style.display = view;
+}
+
+function alterValue(button) {
+	if(button.value == "+")
+		button.value = "-";
+	else if(button.value == "-")
+		button.value = "+";
+	return true;
+}
+</script>
+</head>
+<body>
+<nobr><a href='../login/login.php' target='_top' >WebCMS<small>2</small></a></nobr><span class='at'>@</span><nobr><a href='http://www.cse.unsw.edu.au' target='_top' ><span class='cse'>CSE</span></a></nobr><span class='at'>@</span><nobr><a href='http://www.unsw.edu.au' target='_top' ><span class='cse'>UNSW</span></a></nobr><br><p><span class='ccode'><a target='_top' href='http://www.cse.unsw.edu.au/~cs2121/'>COMP2121</a></span>12s1<br><span class='title'>Microprocessors and Interfacing</span><div class='sec'>&bull;&nbsp;<b><nobr><a href='../notice/index.php?cid=2243&color=navy' target='main' title='You can view course notices here' onMouseOver='window.status=""; return true'>Notices</a></nobr></b><br>
+<div id='l14570'></div></div><div class='sec'>&bull;&nbsp;<b><nobr><a href='../calendar/index.php?cid=2243&color=navy' target='main' title='You can view course events here' onMouseOver='window.status=""; return true'>Calendar</a></nobr></b><br>
+<div id='l14571'></div></div><div class='sec'>&bull;&nbsp;<b><nobr><a href='../intro/index.php?cid=2243&color=navy' target='main' title='Course intro' onMouseOver='window.status=""; return true'>Course Outline</a></nobr></b><br>
+<div id='l14572'></div></div><div class='sec'><nobr><a href='#'  onclick='expand("l14573")'>+</a></nobr>&nbsp;<b><nobr>Administration</nobr></b><br>
+<div id='l14573'>|&ndash;&nbsp;<nobr><a href='../class/index.php?cid=2243&color=navy' target='main' title='You can view classes time here' onMouseOver='window.status=""; return true'>Classes</a></nobr><br>
+</div></div><div class='sec'><nobr><a href='#'  onclick='expand("l14575")'>+</a></nobr>&nbsp;<b><nobr>CourseWork</nobr></b><br>
+<div id='l14575'>|&ndash;&nbsp;<nobr><a href='../works/index.php?inc=LN&cid=2243&color=navy' target='main' title='Lecture notes' onMouseOver='window.status=""; return true'>Notes</a></nobr><br>
+|&ndash;&nbsp;<nobr><a href='../works/index.php?inc=LE&cid=2243&color=navy' target='main' title='Lecture material' onMouseOver='window.status=""; return true'>Lectures</a></nobr><br>
+|&ndash;&nbsp;<nobr><a href='../works/index.php?inc=LB&cid=2243&color=navy' target='main' title='Lab exercises' onMouseOver='window.status=""; return true'>Labs</a></nobr><br>
+|&ndash;&nbsp;<nobr><a href='../works/index.php?inc=AS&cid=2243&color=navy' target='main' title='Assignments' onMouseOver='window.status=""; return true'>Assignments</a></nobr><br>
+</div></div><div class='sec'>&bull;&nbsp;<b><nobr><a href='http://www.cse.unsw.edu.au/~cs2121/AVR/' target='main' >AVR Resources</a></nobr></b><br>
+<div id='l14591'></div></div><script language='Javascript'>
+expand("l14591")</script>
+<div class='sec'>&bull;&nbsp;<b><nobr><a href='http://www.cse.unsw.edu.au/~cs2121/ExampleCode' target='main' >Example Code</a></nobr></b><br>
+<div id='l14592'></div></div><script language='Javascript'>
+expand("l14592")</script>
+<div class='sec'><div id='l14577'></div></div><div class='sec'><nobr><a href='#'  onclick='expand("l14581")'>+</a></nobr>&nbsp;<b><nobr>Staff</nobr></b><br>
+<div id='l14581'>|&ndash;&nbsp;<nobr><a href='http://www.cse.unsw.edu.au/~sridevan/?cid=2243&color=navy' target='main' >Sri Parameswaran</a></nobr><br>
+</div></div><div class='sec'>&bull;&nbsp;<b><nobr><a href='../messageboard/index.php?cid=2243&color=navy' target='main' title='You can post messages here' onMouseOver='window.status=""; return true'>MessageBoard</a></nobr></b><br>
+<div id='l14593'></div></div><p>&bull; <nobr><b><nobr><a href='help.php' target='main' title='Click here for WebCMS help' onMouseOver='window.status=""; return true'>WebCMS Info</a></nobr></b></nobr><form method='post' action='index.php?cid=2243&color=navy' target='_top'onSubmit="return checkForm(this)" >
+<p><b>Status:</b><br>Not tehehe In</p><p>Username:<br><input type='text' name='username' value='' size='10' ><br>Password:<br><input type='password' name='password' value='' size='10'><br><br><input type='submit' name='' value='Login' ></p><p style='font-size:7pt;'>CRICOS Provider No. 00098G</p>
+</form></div>
+</body>
+</html>

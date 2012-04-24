@@ -1,0 +1,7 @@
+reset
+javac */*.java
+
+java dt7.MinistryOfTruthProxy
+
+rm */*.class
+rm */*.java~

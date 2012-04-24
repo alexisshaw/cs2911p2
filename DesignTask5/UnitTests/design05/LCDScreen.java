@@ -1,0 +1,21 @@
+package design05;
+public class LCDScreen implements Peripheral {
+
+   
+   public LCDScreen() {
+   
+   }
+   
+   public void doAction(String input) {
+      
+      System.out.print(input);
+   
+   }
+
+   public String getNameOfPeripheral() {
+   
+      return "LCD Screen";
+   
+   }
+
+}

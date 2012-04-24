@@ -1,0 +1,7 @@
+public interface Peripheral {
+
+   public void doAction(String input);
+
+   public String getNameOfPeripheral();
+
+}
