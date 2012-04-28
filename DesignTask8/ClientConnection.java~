@@ -1,7 +1,0 @@
-package dt8;
-
-
-public interface ClientConnection implements Connection {
-
-
-}

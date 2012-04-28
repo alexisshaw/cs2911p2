@@ -7,6 +7,8 @@ package dt8;
 * Only responds to one request, then halts.
 *
 * @author richardb April 2010
+* @author damonS April 2012 (refactored)
+* @author alexisS April 2012 (refactored)
 * simple class to demonstrate networking for comp2911
 *
 */
@@ -16,11 +18,19 @@ import java.util.LinkedList;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MindlessServer {
+public class MindlessServer implements Server{
 
    public static final int port = 2911;
 
-   public static void main (String[] args) throws IOException {
+   private MindlessServer() {
+   
+   }
+
+   public Server newServer() {
+      return new MindlessServer();
+   }
+
+   public void run () throws IOException {
       System.out.println ("server starting...");
       System.out.println ("listening on "+port);
 

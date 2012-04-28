@@ -1,5 +1,0 @@
-package dt8;
-
-public interface ServerConnection implements Connection {
-
-}
