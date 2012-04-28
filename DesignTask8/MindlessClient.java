@@ -1,4 +1,4 @@
-package dt7;
+package dt8;
 /**
 * A very simple tcp client, opens socket to www.cse.unsw.edu.au
 * port 80 and then reads user input from command line till eof
@@ -18,7 +18,7 @@ public class MindlessClient {
       final String targetName = "localhost";
       final int    targetPort = 111;
 
-      ClientConnection clientConnection = new ClientConnection (targetName, targetPort);
+      BufferedClientConnection clientConnection = ConnectionFactory.newClientConnection (targetName, targetPort);
 
       BufferedReader stdIn = new BufferedReader (
             new InputStreamReader (System.in));
